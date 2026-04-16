@@ -2560,8 +2560,8 @@ app.get('/api/model/dashboard', async (_req, res) => {
   }
 })
 
-const port = process.env.API_PORT ? Number(process.env.API_PORT) : 3001
-app.listen(port, () => {
+const port = process.env.PORT || 10000
+app.listen(port, "0.0.0.0", () => {
   // eslint-disable-next-line no-console
   console.log(`[api] listening on http://localhost:${port}`)
 })
