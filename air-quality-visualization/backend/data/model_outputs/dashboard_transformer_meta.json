@@ -1,0 +1,19 @@
+{
+  "weights": "dashboard_transformer.pt",
+  "scalers": "dashboard_transformer_scalers.joblib",
+  "metrics": {
+    "train_rows": 88968,
+    "test_rows": 22242,
+    "train_sequences": 24601,
+    "test_sequences": 337,
+    "model": "MultiPollutantTransformer",
+    "model_version": "v1-encoder-pos",
+    "split_time": "2026-03-22 05:12:00",
+    "horizon": 168,
+    "input_len": 24,
+    "metrics_eval_hours": 24,
+    "mae": 5.2,
+    "rmse": 6.373,
+    "r2": 0.6096
+  }
+}

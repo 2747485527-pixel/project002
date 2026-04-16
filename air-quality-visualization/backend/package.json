@@ -1,0 +1,22 @@
+{
+  "name": "air-quality-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "server": "node src/server.js",
+    "start": "node src/index.js",
+    "once": "node src/index.js --once",
+    "build:seed": "node src/buildSeed.js",
+    "import:weather-csv": "node src/importWeatherCsv.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.1",
+    "node-cron": "^3.0.3"
+  }
+}
+

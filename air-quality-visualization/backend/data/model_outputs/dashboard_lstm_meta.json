@@ -1,0 +1,19 @@
+{
+  "weights": "dashboard_lstm.pt",
+  "scalers": "dashboard_lstm_scalers.joblib",
+  "metrics": {
+    "train_rows": 88968,
+    "test_rows": 22242,
+    "train_sequences": 24601,
+    "test_sequences": 337,
+    "model": "MultiPollutantLSTM",
+    "model_version": "v2-city-embedding",
+    "split_time": "2026-03-22 05:12:00",
+    "horizon": 168,
+    "input_len": 24,
+    "metrics_eval_hours": 24,
+    "mae": 5.262,
+    "rmse": 6.457,
+    "r2": 0.5993
+  }
+}

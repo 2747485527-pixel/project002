@@ -1,0 +1,3 @@
+# Optional: LSTM 大屏训练脚本 train_dashboard_lstm_model.py
+torch>=2.0
+joblib>=1.2
