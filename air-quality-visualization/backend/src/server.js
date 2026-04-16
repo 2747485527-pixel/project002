@@ -2561,8 +2561,19 @@ app.get('/api/model/dashboard', async (_req, res) => {
 })
 
 const port = process.env.PORT || 10000
-app.listen(port, "0.0.0.0", () => {
-  // eslint-disable-next-line no-console
-  console.log(`[api] listening on http://localhost:${port}`)
+// 固定端口 + 0.0.0.0，Vercel 必须这样写
+const port = process.env.PORT || 10000
+
+app.get('/', (req, res) => {
+  res.json({
+    ok: true,
+    message: "空气质量监测后端运行成功",
+    api: "/api/health"
+  })
 })
+
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server running on port ${port}`)
+})
+
 
